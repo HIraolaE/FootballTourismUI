@@ -150,7 +150,7 @@ function ProcessRequest()
 			var markers = [] 
 			for (i = 0; i < info.length; i++) { 
 
-  			var matchInfo = info[i].localTeam+" vs "+ info[i].awayTeam+"\n at "+info[i].stadium 
+  			var matchInfo = info[i].localTeam+" vs "+ info[i].awayTeam+"\n at "+info[i].stadium +"\n"+ new Date(info[i].date).toString()
 
  infowindows[i] = new google.maps.InfoWindow({
     content: matchInfo
